@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Add floating letter elements related to "palindrome" -->
+    <div class="floating-letter letter-p">P</div>
+    <div class="floating-letter letter-a">A</div>
+    <div class="floating-letter letter-l">L</div>
+    <div class="floating-letter letter-i">I</div>
+    <div class="floating-letter letter-n">N</div>
+    <div class="floating-letter letter-d">D</div>
+    <div class="floating-letter letter-r">R</div>
+    <div class="floating-letter letter-o">O</div>
+    <div class="floating-letter letter-m">M</div>
+    <div class="floating-letter letter-e">E</div>
+    
+    <div class="container">
+        <div id="welcomeSection" class="fade-in">
+            <div class="welcome-content">
+                <h1 class="slide-in">Welcome to the<br>Palindrome Checker!</h1>
+                <p class="description slide-in-delayed">Discover the magic of palindromes - words or phrases that read the same forwards and backwards!</p>
+                <button id="startButton" class="primary-btn bounce">Let's Start</button>
+            </div>
+        </div>
+        
+        <div id="checkerSection" class="hidden fade-in">
+            <div class="checker-content">
+                <h1 class="main-title slide-in">Palindrome Checker</h1>
+                <div class="checker-container slide-in-delayed">
+                    <div class="input-group">
+                        <input type="text" 
+                               id="inputText" 
+                               placeholder="Type your word or phrase..."
+                               autocomplete="off">
+                        <button id="checkButton" class="check-btn">
+                            Check
+                        </button>
+                    </div>
+                    <div id="palindromeResult" class="result-display"></div>
+                </div>
+                <button id="homeButton" class="home-btn slide-in">
+                    <span>Back to Home</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
